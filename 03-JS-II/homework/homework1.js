@@ -100,13 +100,25 @@ function esPrimo(numero) {
   // Nota: Los números 0 y 1 NO son considerados números primos
   // quiero saber si el numero es divisible por cualquiera de los numeros menores a el
 
-for (var i= 2; numero % i === 0; i++){
-  if (i === numero && numero % 1 === 0)
+
+  if (numero === 2)
+  {
+    return true
+  }
+  if (numero === 0 || numero === 1){
+    return false 
+    }
+  for (var i= 2; numero % i !== 0; i++){ //si el resto de num/i es distinto a 0, agregar uno a i 
+  
+
+  if (i === numero -1) //si el resto es cero e i e igual a numero y el resto de numero/1 es 0, devolcer true 
   {
     return true 
   }
 }
-return false
+
+
+return false // si no se cumple la condicion, devolver false 
 
 
     }
