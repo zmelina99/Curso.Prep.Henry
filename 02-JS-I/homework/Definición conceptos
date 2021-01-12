@@ -1,0 +1,14 @@
+En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+Variables: Es una forma de almacenar un dato que puede contener distintos valores (numeros, strings, etc).
+
+Strings: Cadenas de caracteres (bloques de teto), son palabras. Se escriben entre ''.
+
+Funciones (argumentos, return): una funcion contiene informacion sobre que hacer. Si se la llama, va a hacer siempre lo que 
+se le dijo la primera vez. Los datos que recibe pueden ser distintos cada vez pero el proceso que realiza es siempre el mismo. 
+Los argumentos son la informacion que se le pasa a la funcion para que se ejecute. 
+Return sirve para determinar que es lo que va a devolver la función. Es la unica forma en la que escapan los datos.  
+
+Declaraciones if: Las declaraciones if sirven para decir que si se cumple determinada condición, suceda una cosa y si no se cumple, suceda otra.
+
+Valores booleanos (true, false): determinan si algo es verdadero o falso. Se escriben sin ''. 

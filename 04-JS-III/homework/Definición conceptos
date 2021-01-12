@@ -1,0 +1,5 @@
+En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+Arrays: Son arreglos. Se determinan entre []. Contienen información de cualquier tipo, ya sean strings, numeros, booleanos, objetos y hasta pueden contener otros arrays dentro de un array.
+Es como una carpeta que contiene muchos archivos. Los elementos que contiene se enumeran desde el 0. Para acceder a estos elementos se escribe el nombre del array y entre [] se escribe el numero 
+de indice del elemento al que se quiere acceder. Por ejemplo, par acceder al primer elemento, se escribe array[0].

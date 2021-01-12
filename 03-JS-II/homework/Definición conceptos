@@ -1,0 +1,8 @@
+En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+for: Sirve para que se ejecute algo durante determinado tiempo. Primero se delcara e inicializa la variable, despues se establece una condición, si esta condición se cumple, 
+se va a ejecutar el codigo dentro del for y si esto sucede, se va a cumplir la ultima parte del for que es incrementar o disminuir la variable.
+
+&&: Solo es verdadero si ambas condiciones se cumplen.
+||: Solo es falso si ambas condiciones son falsas.
+!: Sirve para negar las cosas. Es como decir que no es igual a algo.

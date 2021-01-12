@@ -1,0 +1,11 @@
+En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+Objetos: un objeto contiene información sobre una sola cosa que puede ser accedida a traves de su key. Cada key tiene asignado un valor. 
+
+Propiedades: Son elementos de dato de un objeto. Son los pares key value.
+
+Métodos: Son las funciones que estan dentro de un objeto 
+
+Bucle for…in: pasa por cada key-value que esta en el objeto. Recorre cada clave y termine cuando haya pasado por todas. 
+
+Notación de puntos vs notación de corchetes: son las formas de acceder a las propiedades de un objeto. Usando [], hay que poner los strings entre '' se puede poner cualquier dato, hasta espacio mientras que con el . no lee algunos datos.  

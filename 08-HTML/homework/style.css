@@ -1,0 +1,24 @@
+h1 {
+    color: purple;
+}
+
+#thirdDiv{ 
+    color: red,
+}
+
+img {
+    width:400px;
+  }
+  #thirdDiv { 
+      height: 600px;
+      width: 500px;
+      background-color: lightpink;
+      padding: 50px;
+      border-color: magenta;
+      border-width: 30px;
+
+  }
+  #spanId {
+      font: 18px;
+      margin: 50px
+  }
