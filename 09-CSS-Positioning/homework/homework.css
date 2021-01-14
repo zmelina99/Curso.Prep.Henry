@@ -47,7 +47,7 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 /* Acá va tu código */
 #ejercicioCinco {
     display:flex;
-    justify-content: space-around;
+    justify-content: space-betweens;
     align-items: center;
 
 

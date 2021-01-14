@@ -9,14 +9,13 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-return (array[array.length-1]);
-
+return array[array.length-1];
 }
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-return (array.length);
+return array.length;
 }
 
 function incrementarPorUno(array) {
@@ -24,21 +23,20 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  var arrayNuevo = []
-  for (var i = 0; i < array.length; i++){
-    arrayNuevo[i] = (array[i] +1 );
-  }
-  return arrayNuevo
+var nArray = []
+for (var i= 0; i < array.length; i++){
+  nArray.push(array[i]+1)
 }
-// agarro el primer elemento y le sumo 1 e imprimo el resultado, despues el segundo, despues el tercero 
+return nArray;
+}
+
 
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  array.push(elemento)
-  return (array)
-  
+   array.push(elemento);
+   return array;
 }
 
 function agregarItemAlComienzoDelArray(array, elemento) {
@@ -46,8 +44,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-  array.unshift(elemento)
-  return (array)
+   array.unshift(elemento);
+return array;
 }
 
 function dePalabrasAFrase(palabras) {
@@ -56,50 +54,42 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  var frase = ''
+  var frase = '';
   for (var i = 0; i < palabras.length; i++){
-    if (i === palabras.length -1){
-      return frase + palabras[i]
- }
-    frase = (frase + palabras[i] + ' ')
-  
-      
+    if (i === palabras.length-1){
+      frase= frase + palabras[i]
+    }
+    
+    else {  
+      frase = frase + palabras[i] + ' '
   }
-  return frase 
+}
+    return frase 
 }
 
-//Lo que quiero que pase es que cada palabra de mi arreglo se imprima, una al lado de la otra. 
-//Si yo tuviera que hacerlo, escribiria la primer palabra del arrglo, luego dejaria un espacio y escribiria la segunda 
-//y asi sucesivamente 
+
+
 
   function arrayContiene(array, elemento) {
     // Comprueba si el elemento existe dentro de "array"
     // Devuelve "true" si está, o "false" si no está
     // Tu código:
-    for (var i = 0; i< array.length; i++){
-        if (array[i] === elemento)
-    {
-    return true
+  for (var i = 0; i < array.length; i++){
+    if (array[i] === elemento){
+      return true;
     }
-}
-
-    return false 
- 
-}
-
-
+  }
+    return false;
+  }
   function agregarNumeros(numeros) {
     // "array" debe ser una matriz de enteros (int/integers)
     // Suma todos los enteros y devuelve el valor
     // Tu código:
- 
-  var suma = 0
-  for (var i= 0; i < numeros.length; i++){
-    
-    suma = (suma+numeros[i])
-}
-return suma
-  
+ var suma = 0
+  for (var i = 0; i < numeros.length; i++){
+    suma = suma + numeros[i]
+  }
+  return suma;
 }
 
 
@@ -108,24 +98,23 @@ return suma
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
 var suma = 0
-  for (var i= 0; i< resultadosTest.length; i++){
-suma = (suma+resultadosTest[i])
-}
+for (var i = 0; i < resultadosTest.length; i++){
+suma = suma + resultadosTest[i]
+ }
+
 return suma/resultadosTest.length
 }
-
-
   function numeroMasGrande(numeros) {
     // "numeros" debe ser una matriz de enteros (int/integers)
     // Devuelve el número más grande
     // Tu código:
-    var maxValue = numeros[0]
-    for (var i= 0; i< numeros.length; i++)
-   if (maxValue<numeros[i]){
-      maxValue=numeros[i]
-   }
-return maxValue
-          
+  var max = numeros[0]
+  for (var i = 0; i < numeros.length; i++){
+    if (max < numeros [i]){
+      max= numeros[i]
+    }
+  }
+  return max
   }
 
 
@@ -135,15 +124,14 @@ function multiplicarArgumentos() {
   // Si no se pasan argumentos devuelve 0
   // Si se pasa un argumento, simplemente devuélvelo
   // Tu código:
-if (arguments.length<1){
-   return 0
- }
-  var mult = 1
-  for (var i= 0; i < arguments.length; i++){
-    mult = (mult * arguments[i])
+var result = 1
+  if (arguments.length < 1){
+  return 0
 }
-return mult
-  
+for (var i = 0; i < arguments.length; i++){
+  result= result * arguments[i]
+}  
+return result 
 }
 
 // No modificar nada debajo de esta línea
