@@ -13,7 +13,7 @@ const nuevoBool = true;
 const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * 4 === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40;
 
 // Resuelve el siguiente problema matemático:
 const nuevoModulo = 21 % 5 === 1;
@@ -53,7 +53,7 @@ function multiplica(x, y) {
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-return x/y;  
+return x / y;  
 }
 
 function sonIguales(x, y) {
@@ -63,6 +63,7 @@ function sonIguales(x, y) {
   if (x === y){
     return true;
   }
+
   else {
     return false;
   }
@@ -74,6 +75,7 @@ function tienenMismaLongitud(str1, str2) {
   if (str1.length === str2.length){
     return true;
   }
+
  else {
    return false;
  }
@@ -86,6 +88,7 @@ function menosQueNoventa(num) {
   if (num < 90){
     return true;
   }
+
   else {
     return false;
   }
@@ -97,6 +100,7 @@ function mayorQueCincuenta(num) {
   if (num > 50){
     return true;
   }
+
  else{
    return false; 
  }
@@ -105,7 +109,7 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  return x%y;
+  return x % y;
 }
  
 
@@ -116,17 +120,18 @@ function esPar(num) {
   if (num % 2 === 0){
     return true;
   }
+
   else{
     return false;
   }
 }
-  }
+
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
- if (num%2 != 0){
+ if (num % 2 != 0){
    return true;
  }
 else {
@@ -137,7 +142,7 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
- return Math.pow(num,2);
+  return Math.pow(num,2);
 }
 
 function elevarAlCubo(num) {
@@ -150,7 +155,7 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-return Math.pow(num, exponent);
+  return Math.pow(num, exponent);
 }
    
 
@@ -163,28 +168,28 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
- return Math.ceil(num);
+  return Math.ceil(num);
 }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-return str + '!';
+return `${str}!`;
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return  nombre + ' ' + apellido;
+  return  `${nombre} ${apellido}`;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-return 'Hola' + nombre + '!';
+return `Hola ${nombre}!`; 
 }
 
 function obtenerAreaRectangulo(alto, ancho) {

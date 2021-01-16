@@ -32,11 +32,8 @@ function map(array, cb) {
 var nArray = array.map(function(elemento){
  return cb(elemento)
   });
-  return nArray
-  
 
-
- 
+  return nArray; 
 }
 
 // No modificar nada debajo de esta línea

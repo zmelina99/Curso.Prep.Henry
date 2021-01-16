@@ -8,6 +8,7 @@ function obtenerMayor(x, y) {
    if (x > y){
      return x;
    }
+
   else {
     return y;
   }
@@ -22,13 +23,16 @@ function obtenerMayor(x, y) {
    if (idioma === 'aleman'){
      return 'Guten Tag!';
    }
-     else if (idioma === 'mandarin') {
+
+     else if (idioma === 'mandarin'){
        return 'Ni Hao!';
      } 
+   
      else if (idioma === 'ingles'){
        return 'Hello!';
      }
-       else {
+   
+     else {
          return 'Hola!';
        }
      }
@@ -41,6 +45,7 @@ function obtenerMayor(x, y) {
       if (numero === 10 || numero === 5){
         return true;
       }
+
      else {
        return false;
      }
@@ -53,6 +58,7 @@ function obtenerMayor(x, y) {
     if (numero < 50 && numero > 20){
     return true;
   }
+
   else {
     return false;
   }
@@ -70,6 +76,7 @@ function obtenerMayor(x, y) {
   if (numero != Math.floor(numero)){
     return false;
   }
+
   else {
     return true;
   }
@@ -86,9 +93,11 @@ function obtenerMayor(x, y) {
     else if (numero%3 === 0){
       return 'fizz';
     }
+    
     else if (numero%5 === 0) {
       return 'buzz';
     } 
+    
     else {
       return numero;
     }
@@ -102,16 +111,19 @@ function obtenerMayor(x, y) {
     // Pista 2: Puedes resolverlo usando un bucle `for`
     // Nota: Los números 0 y 1 NO son considerados números primos
     // quiero saber si el numero es divisible por cualquiera de los numeros menores a el
-  if (numero === 0 || numero === 1){
+  if (numero <= 1){
     return false;
   }
+  
   if (numero === 2){
     return true;
   }
-for (var i = 2; i < numero; i++){
-if (numero%i=== 0){
-  return false; 
+
+  for (var i = 2; i < numero; i++){
+    if (numero%i=== 0){
+     return false; 
 }
+
 else {
   return true;
 }

@@ -7,12 +7,14 @@ function crearGato(nombre, edad) {
   // Devuelve el objeto
   // Tu código:
  var objeto = {
+
 nombre: nombre, 
 edad:edad, 
 meow: function(){
   return 'Meow!'
-} 
- }
+  } 
+ 
+}
  return objeto
 }
 
@@ -21,7 +23,8 @@ function agregarPropiedad(objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
-objeto[property]= null
+objeto[property] = null
+
 return objeto;
 }
     
@@ -46,7 +49,8 @@ function eliminarPropiedad(objeto, propiedad) {
   // Devuelve el objeto
   // Tu código:
   delete objeto[propiedad];
-  return objeto
+  
+  return objeto;
 }
 
 function nuevoUsuario(nombre, email, password) {
@@ -54,9 +58,11 @@ function nuevoUsuario(nombre, email, password) {
   // Devuelve el objeto
   // Tu código:
   objeto = {
+
     nombre: nombre, 
     email:email,
     password:password,
+  
   }
 return objeto;
 }
@@ -68,10 +74,12 @@ function tieneEmail(usuario) {
 if (usuario.email){
   return true;
 }
+
 else {
   return false;
 }
 }
+
 function tienePropiedad(objeto, propiedad) {
   // Devuelve "true" si el objeto tiene el valor del argumento "propiedad"
   // "propiedad" es un string
@@ -80,6 +88,7 @@ function tienePropiedad(objeto, propiedad) {
   if (objeto[propiedad]){
     return true; 
   }
+  
   else {
     return false;
   }
@@ -93,6 +102,7 @@ function verificarPassword(usuario, password) {
  if (usuario.password === password){
    return true;
  }
+
  else {
    return false;
  }
@@ -103,7 +113,8 @@ function actualizarPassword(usuario, nuevaPassword) {
   // Devuelve el objeto
   // Tu código:
 usuario.password = nuevaPassword
-return usuario
+
+return usuario;
 }
 
 function agregarAmigo(usuario, nuevoAmigo) {
@@ -112,8 +123,10 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Devuelve el objeto "usuario"
   // // Tu código:
  usuario.amigos.push(nuevoAmigo)
-return usuario
+
+return usuario;
 }
+
 function pasarUsuarioAPremium(usuarios) {
   // "usuarios" es un array de objetos "usuario"
   // Cada objeto "usuario" tiene la propiedad "esPremium"
@@ -123,8 +136,10 @@ function pasarUsuarioAPremium(usuarios) {
   for (var i = 0; i < usuarios.length; i++){
     usuarios[i].esPremium = true;
   }
-return usuarios
+
+return usuarios;
 }
+
 function sumarLikesDeUsuario(usuario) {
   // "usuario" tiene una propiedad llamada "posts" que es un array
   // "posts" es un array de objetos "post"
@@ -134,8 +149,9 @@ function sumarLikesDeUsuario(usuario) {
   // Tu código:
   var suma = 0
   for (var i = 0; i < usuario.posts.length; i++){
-    suma = suma + usuario.posts[i].likes
+    suma += usuario.posts[i].likes
   }
+
 return suma; 
 }
 
@@ -153,7 +169,8 @@ function agregarMetodoCalculoDescuento(producto) {
   producto.calcularPrecioDescuento = function(){
     return this.precio - (this.precio * this.porcentajeDeDescuento)
   }
-return producto
+
+  return producto;
     
 }
 
